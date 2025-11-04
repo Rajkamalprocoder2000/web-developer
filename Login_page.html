@@ -1,0 +1,274 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMS</title>
+    <link href="style.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    
+    <div class="container-fluid" >
+      <div class="header-nav sticky-top" >
+        <div class="row" id="hidden">
+            <div class="container text-center header-bgcolor " >
+                <div class="col-sm-12 py-2 d-flex align-items-center justify-content-center ">
+                    <img src="images/bell-icon.png" class="img-fluid pe-2 "/> 
+                   <p class="text-white m-0"><strong class="ps-4"> Please Note</strong>
+                    the cost of the courses with a certificate will increase in a few days. Please make a payment today.
+                    </p>
+                    <i class="bi bi-x-lg text-white" onclick="hide()"></i>
+                </div>
+               </div>
+            </div>
+
+
+            <div class="row shadow  align-items-start justify-content-center py-1" style="background-color: white;">
+                <div class="col-sm-11">
+                <ul class="nav  align-items-center justify-content-between">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><img src="images/learnvern_logo_blue.png" class="img-fluid"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="dropdown">
+                        <button class="btn  dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-list"></i> Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search" >
+                       
+                      </form></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-disabled="true"><i class="fa-solid fa-share fa-lg" style="color: rgb(50, 48, 48);"></i><span class="pe-2 fs-5" style="color: rgb(56, 55, 55);"> Share</Span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <button type="button" class="btn btn-primary">Join for free</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-list fa-2xl fw-bold"></i>
+                
+                    </li>
+                    
+                  </ul>
+
+</div>
+            </div>
+            <!--------------------------header Nav End---------------------------------------------------------------------------------------------------------------->
+
+
+
+        </div>
+        
+        
+  
+    <!------------------------------ student Registration -------------------------------------------------->
+    <div class="regitration-student">
+        <div class="row mt-3">
+            <div class="col-sm-4 mx-auto align-items-center justify-content-center">
+                <h4 class="py-4 mx-auto text-center fw-5 " style=" color: rgb(58, 146, 235);">Sign up and start learning</h4>
+                <a href="https://www.learnvern.com/auth/google" class="btn w-100 btn-google mb-3 mx-auto py-2 px-4 dataLayerGmailSignupObj text-white" style="background-color: rgb(226, 80, 31);"><i class="fab fa-google float-start pt-1"></i>Sign up with Gmail</a>
+                <a href="https://www.learnvern.com/auth/facebook" class="btn w-100  flot-end  mb-3 py-2 px-4 dataLayerFBSignupObj  text-white" style="background-color: rgb(19, 34, 122);"><i class="fab fa-facebook-f float-start pt-1"></i>Sign up with Facebook</a>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-sm-12">
+                    <h6 class="text-center">Or</h6>
+                    <div class="mb-2">
+                        <label for="loginEmail" class="col-form-label">Email</label>
+                        <div >
+                            <input name="email" id="email" class="form-control "
+                                   placeholder="example@example.com"
+                                   type="email" value="" data-validation="required|email" id="email">
+                        </div>
+                </div>
+                <div class="mb-2">
+                    <label for="loginEmail" class="col-form-label">Password</label>
+                    <div >
+                        <input name="email" id="email" class="form-control"
+                               placeholder="example@example.com"
+                               type="email" value="" data-validation="required|email" id="email">
+                    </div>
+                    <br>
+                    <a href="StudentDashboard.html" class="btn btn-facebook w-100 mb-3 py-2 px-4 dataLayerFBSignupObj w-100 text-white" style="background-color: rgb(39, 128, 237);">LOGIN</a><br>
+                    
+            </div>
+                
+
+
+            </div>
+            </div>
+
+
+
+           </div>
+    </div>
+    </div>
+
+
+    <!----------------------------pegination------------------------------------------------->
+    <div class="row align-items-center justify-content-center">
+      <div class="col-sm-2 pt-3 align-items-center justify-content-center">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="home_page.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="home_page.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Login_page.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="StudentDashboard.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="StudentDashboard.html">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+     </div>
+            
+    <!--------------------------------footer------------------------------------->
+    <div class="row  text-white" style="background-color: rgb(16, 16, 164);">
+    
+<footer class="text-center text-lg-start  ">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset text-decoration-none">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      
+
+      <div class="row mt-3">
+        
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Download our App
+          </h6>
+          <p>
+            LearnVern is a training portal where anyone can learn any course in vernacular languages for free.
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">About</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Download the App</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Become SME</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Ambassader</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset text-decoration-none">Help</a>
+          </p>
+        </div>
+      
+
+     
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+       
+      </div>
+      
+    </div>
+  </section>
+  
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">KM  POOJA</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    </div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

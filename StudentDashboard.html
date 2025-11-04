@@ -1,0 +1,338 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMS</title>
+    <Link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!----------------------Header navbar new-------------------------------------------------->
+    <div class="header-nav">
+      <div class="container-fluid">
+       
+            <div class="row"  id="hidden">
+               <div class="container text-center header-bgcolor" >
+                <div class="col-sm-12 py-2 d-flex align-items-center justify-content-center ">
+                    <img src="images/bell-icon.png" class="img-fluid pe-2 "/> 
+                   <p class="text-white m-0"><strong class="ps-4"> Please Note</strong>
+                    the cost of the courses with a certificate will increase in a few days. Please make a payment today.
+                    </p>
+                    <i class="bi bi-x-lg text-white" onclick="hide()"></i>
+                </div>
+               </div>
+            </div>
+            <!--------------------------Annoucment heading nav---------------------------------------->
+           
+            <!-------------------------Headinding navbar--------------------------------------------------------------->
+
+            <div class="row ">
+                <nav class="navbar  shadow py-3 mb-3 bg-body-tertiary ">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">
+                        <img src="images/learnvern_logo_blue.png" alt="Bootstrap" class="img-fluid">
+                      </a>
+                      <button class="btn btn-primary text-end btn-md " type="submit">Logout</button>
+                    </div>
+                  </nav>
+            </div>
+            <!---------------------- Section Area----------------------------------------------------------------->
+
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="fw-bold" style="font-size: 2.1rem;">Welcome</h2>
+                        <h5 class="fw-bold"style="font-size: 1.4rem;">Thanks for Joining LearnVern</h5>
+                        <p style="font-size: 1.5rem;">Continue Learning all the Courses for free and Become Job Ready</p>
+
+                    </div>
+                </div>
+            </div>
+            <!----------------------------Student-information------------------------------------------------>
+
+
+            <div class="row align-items-center justify-content-center py-4">
+                <div class="col-sm-11 ">
+                    <h6 class="fw-bold fs-5" style="color: rgb(11, 11, 112);">
+                        Personal Information
+                    </h6>
+                    <div class="row py-2">
+                        <div class="col-sm-3 align-items-center justify-content-center">
+                          <img src="images/upload_pic-removebg-preview.png" class="img-fluid " height="125" width="125" style="margin-left: 7%;">
+                          <h6 class="fw-bold py-1">Upload Profile
+                            Picture</h6>
+                        </div>
+                        <div class="col-sm-9  pt-3 align-self-center">
+                          <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-10">
+                                <p class="fw-bold"
+                                   > Name
+                                    Visible on Certificate:
+                                    <span style="color: rgb(24, 99, 180);">Raj basic techknowled</span> </p>
+                            </div>
+                        </div>
+
+                        <div class="form-group d-flex mb-3 pb-3">
+                          <div class="col-2 my-auto">
+                              <label for="">Name<small class="text-danger">*</small></label>
+                          </div>
+                          <div class="col-10 form-group">
+                              <input id="userFirstName" class="form-control inputField" placeholder="Full Name" data-validation="required" data-validation-error-msg="Please enter a name."  name="first_name" type="text" value="Raj basic techknowled">
+                          </div>
+                      </div>
+                      <div class="row my-3">
+                        <input type="hidden" name="is_mobile_verify" id="is_mobile_verify" value="0">
+<input type="hidden" name="isd_code" id="isd_code"
+value="91">
+                            <div class="col-6">
+<div class=" row form-group d-flex">
+    <div class="col-3 my-auto">
+        <label for="mobile_number">Mobile </label>
+        <small class="text-danger">*</small>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-8 ps-1 pe-0">
+        <div class="form-group">
+            <input class="form-control" placeholder="Mobile Number"
+                   type="number" id="mobile_number"
+                   value=""
+                   data-validation="required number length"
+                   data-validation-length="min10"
+                   autocomplete="off" name="mobile_number">
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-6 ps-0">
+  <div class="row form-group d-flex">
+    <div class="col-1"></div>
+    <div class="col-3  my-auto">
+        <label for="">City </label>
+        <small class="text-danger">*</small>
+    </div> <div class="col-8">
+      <div class="form-group">
+          <input name="city" id="city" class="form-control"
+                 placeholder="Enter City"
+                 type="text" value="Ghāziābād" data-validation="required">
+      </div>
+  </div>
+  </div>
+
+</div>
+                         
+                           
+
+
+                        </div>
+                    </div>
+</div>
+                </div>
+<!-----------------------select your interest---------------------------------------------------------------->
+<div class="row align-items-center justify-content-center py-4 ">
+
+<div class="col-sm-11">
+  <h6 class="fw-bold fs-5" style="color: rgb(11, 11, 112);">
+  Select Your Interest<small class="text-danger">*</small>
+</h6>
+<div class="row py-4">
+  <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+<div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+  <img src="images/59123.jpg" class="img-fluid"/>
+  <div class="course-category-meta d-flex align-items-start flex-column h-100">
+    <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+    <br>
+    <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+</div>
+</div>
+  </div>
+  <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+    <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+      <img src="images/36609.jpg" class="img-fluid"/>
+      <div class="course-category-meta d-flex align-items-start flex-column h-100">
+        <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Personality Development  &bull; Import Export &bull; HR Recruitment</h6>
+        <br>
+        <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+    </div>
+    </div>
+      </div>
+      <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+        <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+          <img src="images/75828.jpg" class="img-fluid"/>
+          <div class="course-category-meta d-flex align-items-start flex-column h-100">
+            <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+            <br>
+            <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+        </div>
+        </div>
+          </div>
+          <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+            <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+              <img src="images/58534.jpg" class="img-fluid"/>
+              <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                <br>
+                <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+            </div>
+            </div>
+              </div>
+              <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                  <img src="images/58534 (1).jpg" class="img-fluid"/>
+                  <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                    <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                    <br>
+                    <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                </div>
+                </div>
+                  </div>
+                  <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                    <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                      <img src="images/65957.jpg" class="img-fluid"/>
+                      <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                        <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                        <br>
+                        <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                    </div>
+                    </div>
+                      </div>
+                      <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                        <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                          <img src="images/15629.jpg" class="img-fluid"/>
+                          <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                            <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                            <br>
+                            <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                        </div>
+                        </div>
+                          </div>
+                          <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                            <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                              <img src="images/76159.jpg" class="img-fluid"/>
+                              <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                <br>
+                                <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                            </div>
+                            </div>
+                              </div>
+                              <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                  <img src="images/78542.jpg" class="img-fluid"/>
+                                  <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                    <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                    <br>
+                                    <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                </div>
+                                </div>
+                                  </div>
+                                  <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                    <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                      <img src="images/35794.jpg" class="img-fluid"/>
+                                      <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                        <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                        <br>
+                                        <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                    </div>
+                                    </div>
+                                      </div> <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                        <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                          <img src="images/124578.jpg" class="img-fluid"/>
+                                          <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                            <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                            <br>
+                                            <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                        </div>
+                                        </div>
+                                          </div>
+  
+</div>
+</div>
+</div>
+
+<div class="row align-items-center justify-content-center py-1">
+  <div class="col-sm-11 gap-2">
+    <h5 class="fw-bold" style="color: rgb(16, 16, 109);">Are you a</h5>
+    <div class="form-check form-check-inline me-5 py-2">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label fw-bold" for="inlineCheckbox1"  style="color: rgb(8, 8, 120);">Student</label>
+    </div>
+    <div class="form-check form-check-inline checkbox-space">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label fw-bold" for="inlineCheckbox2"  style="color: rgb(8, 8, 120);">Fresh Graduate</label>
+    </div>
+    <div class="form-check form-check-inline checkbox-space">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label  fw-bold" for="inlineCheckbox2" style="color: rgb(8, 8, 120);">Working Professional</label>
+    </div>
+    
+   
+  </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-sm-12">
+    <button type="button" class="btn btn-blue mx-auto d-flex justify-content-center w-25 mb-3 mt-5 text-white fw-bold" style="background-color: rgb(63, 125, 234);">
+                          Start Learning
+                    </button>
+  </div>
+</div>
+
+
+               
+           
+
+        </div>
+
+
+
+        <!----------------------------pegination------------------------------------------------------->
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-2 pt-3 align-items-center justify-content-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="Login_page.html">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="home_page.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="Login_page.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="StudentDashboard.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+         </div>
+                
+        
+
+        
+        
+        
+    </div>
+<!--------------------------------Footer------------------------------------------------>
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center py-4 " style="background-color: rgb(10, 10, 136);">
+        <div class="col-sm-5">
+          <img src="images/logo.png" class="img-fluid d-inline"/>
+          
+        </div>
+        <div class="col-sm-6">
+          <p class="text-end align-self-center mb-0 text-white">© 2024 LearnVern, All Rights Reserved.</p>
+        </div>
+      
+      
+      </div>
+      
+    </div>
+
+    
+      
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

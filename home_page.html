@@ -1,0 +1,1075 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LMS</title>
+    <link href="style.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    </style>
+  </head>
+  <body style="overflow-x: hidden;">
+    
+    <div class="container-fluid" >
+      <div class="header-nav sticky-top" >
+        <div class="row" id="hidden">
+            <div class="container text-center header-bgcolor " >
+                <div class="col-sm-12 py-2 d-flex align-items-center justify-content-center ">
+                    <img src="images/bell-icon.png" class="img-fluid pe-2 "/> 
+                   <p class="text-white m-0"><strong class="ps-4"> Please Note</strong>
+                    the cost of the courses with a certificate will increase in a few days. Please make a payment today.
+                    </p>
+                    <i class="bi bi-x-lg text-white" onclick="hide()"></i>
+                </div>
+               </div>
+            </div>
+
+
+            <div class="row shadow  align-items-start justify-content-center py-1" style="background-color: white;">
+                <div class="col-sm-11">
+                <ul class="nav  align-items-center justify-content-between">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><img src="images/learnvern_logo_blue.png" class="img-fluid"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-list"></i> Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        
+                        <form class="d-flex" role="search">
+                        <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search" >
+                       
+                      </form></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-disabled="true"><i class="fa-solid fa-share fa-lg" style="color: rgb(50, 48, 48);"></i><span class="pe-2 fs-5" style="color: rgb(56, 55, 55);"> Share</Span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Login_page.html">
+                            <button type="button" class="btn btn-primary">Join for free</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-list fa-2xl fw-bold"></i>
+                
+                    </li>
+                    
+                  </ul>
+
+</div>
+            </div>
+            <!--------------------------header Nav End---------------------------------------------------------------------------------------------------------------->
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card text-bg-dark" >
+                    <img src="images/pexels-emily-ranquist-493228-1205651.jpg" class="card-img w-100 "  height="350" >
+                    <div class="card-img-overlay">
+                      
+                      <p class="h6" style="font-size: 7vb; color: rgb(15, 15, 82);"><b>Learn Any Course for</b></p>
+                      <p class="h5" style="font-size: 7vh; color: rgb(15, 15, 82);"><b><span style="color: brown;">Free</span> in your own</b></p>
+                      <p style="font-size:7vh; color: rgb(15, 15, 82);"><b>Language</b></p>
+                      <br>
+                      <div class="row align-items-start justify-content-center">
+                        <div class="col-sm-3 text-center">
+                            
+                               <a href="Login_page.html" class="btn btn-primary btn-lg w-100" type="button"  style="font-size: 5vb;">
+                                    <b>Join for free</b>
+                              
+                              </a>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+            </div>
+        </div>
+        <div class="row align-items-center pt-4">
+            <div class="col-sm-10 mx-auto ">
+                <h2 style="color: rgb(16, 16, 97); font-size: 37px; font-weight: bold;">Courses by <span style="color: rgb(0, 110, 255);">Language</span></h2>
+                <div class="row align-items-center justify-content-between mt-2">
+                    <div class="col-2">
+                        <div class="lan-card rounded shadow-sm card-onhover" style="background: url('https://www.learnvern.com/images/new-home-assets/english_initial_color.jpg') center no-repeat;">
+                            <a href="https://www.learnvern.com/courses?language=english" class="" style="height: 100%;text-decoration: none;color: rgb(18, 18, 115);">
+                                <div class="p-4 mt-3 text-center d-flex flex-column my-2">
+                                    
+                                    <label for="" class="lan-text pt-2 fs-2">English</label>
+                                    <span><span class="course-badge px-2 rounded-pill bg-body">31 Courses</span></span>
+                                    <span class="language-badge mt-auto pt-3 text-dark">English</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="lan-card mx-auto rounded shadow-sm" style="background: url('https://www.learnvern.com/images/new-home-assets/hindi_initial_color.jpg') center no-repeat;">
+                            <a href="https://www.learnvern.com/courses?language=hindi" class="" style="height: 100%;text-decoration: none;color: rgb(18, 18, 115);">
+                                <div class="p-4 mt-3 text-center d-flex flex-column my-2">
+                                    
+                                    <label for="" class="lan-text pt-2 fs-2">हिन्दी</label>
+                                    <span><span class="course-badge px-2 rounded-pill bg-body">121 Courses</span></span>
+                                    <span class="language-badge mt-auto pt-3 text-dark">Hindi</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="lan-card mx-auto rounded shadow-sm" style="background: url('https://www.learnvern.com/images/new-home-assets/bangla_initial_color.jpg') center no-repeat;">
+                            <a href="https://www.learnvern.com/courses?language=bangla" class="" style="height: 100%; text-decoration: none;color: rgb(18, 18, 115);">
+                                <div class="p-4 mt-3 text-center d-flex flex-column my-2">
+                                    
+                                    <label for="" class="lan-text pt-2 fs-2">বাংলা</label>
+                                    <span><span class="course-badge px-2 rounded-pill bg-body">3 Courses</span></span>
+                                    <span class="language-badge mt-auto pt-3 text-dark">Bangla</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="lan-card mx-auto rounded shadow-sm" style="background: url('https://www.learnvern.com/images/new-home-assets/telugu_initial_color.jpg') center no-repeat;">
+                            <a href="https://www.learnvern.com/courses?language=telugu" class="" style="height: 100%;text-decoration: none;color: rgb(18, 18, 115);">
+                                <div class="p-4 mt-3 text-center d-flex flex-column my-2">
+                                    
+                                    <label for="" class="lan-text pt-2 fs-2">తెలుగు</label>
+                                    <span><span class="course-badge px-2 rounded-pill bg-body">8 Courses</span></span>
+                                    <span class="language-badge mt-auto pt-3 text-dark">Telugu</span>
+                                </div>
+                            </a>
+                        </div>
+                       </div>
+                    <div class="col-2">
+                        <div class="lan-card  rounded shadow-sm" style="background: url('https://www.learnvern.com/images/new-home-assets/english_initial_color.jpg') center no-repeat;">
+                            <a href="https://www.learnvern.com/courses?language=english" class="link-underline-opacity-0" style="height: 100%; text-decoration: none; color: rgb(18, 18, 115);">
+                                <div class="p-4 mt-3 text-center d-flex flex-column my-2">
+                                    
+                                    <label for="" class="lan-text pt-2 fs-2">English</label>
+                                    <span><span class="course-badge px-2 rounded-pill bg-body ">31 Courses</span></span>
+                                    <span class="language-badge mt-auto pt-3 text-dark">English</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                   
+
+
+                </div>
+               
+            </div>
+        </div>
+
+
+        <div class="row align-items-center justify-content-center mt-5">
+            <div class="col-sm-10">
+                <h2 style="color: rgb(16, 16, 97); font-size: 37px; font-weight: bold;">Courses For <span style="color: rgb(0, 110, 255);">Career Growth</span></h2>
+                <p class="pt-2 fs-4" style="color: rgb(12, 12, 74);">Professional Courses in Your Field of Study To Expedite Career Growth </p>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-sm-11">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">COMPUTER ENGINEER/DIPLOMA</h5>
+                                      <p class="card-text">25 Courses</p>
+                                      <a href="#" class="btn btn-primary">Join now</a>
+                                    </div>
+                                  </div>
+                           
+                        </div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">COMPUTER ENGINEER/DIPLOMA</h5>
+                                  <p class="card-text">20 Courses</p>
+                                  <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                              </div></div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">MECHANICAL ENGINEER/DIPLOMA</h5>
+                                  <p class="card-text">7 Courses</p>
+                                  <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                              </div></div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">CIVIL ENGINEER/DIPLOMA</h5>
+                                  <p class="card-text">3 Courses</p>
+                                  <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                              </div></div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">ELECTRICAL ENGINEER/DIPLOMA</h5>
+                                  <p class="card-text">4 Courses</p>
+                                  <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                              </div></div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">ELECTRICAL ENGINEER/DIPLOMA</h5>
+                                    <p class="card-text">4 Courses</p>
+                                    <a href="#" class="btn btn-primary">Join now</a>
+                                  </div>
+                              </div></div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">ELECTRICAL ENGINEER/DIPLOMA</h5>
+                                    <p class="card-text">4 Courses</p>
+                                    <a href="#" class="btn btn-primary">Join now</a>
+                                  </div>
+                              </div></div>
+                              <div class="swiper-slide"> <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">ELECTRICAL ENGINEER/DIPLOMA</h5>
+                                    <p class="card-text">4 Courses</p>
+                                    <a href="#" class="btn btn-primary">Join now</a>
+                                  </div>
+                               
+                              </div></div>
+                              <div class="swiper-slide"> 
+                                <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">12TH</h5>
+                                  <p class="card-text">25 Courses</p>
+                                  <a href="#" class="btn btn-primary">Join now</a>
+                                </div>
+                              </div></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+
+        <div class="container">
+
+            <!-- row -->
+            <div class="row align-items-center justify-content-center mt-5">
+                <div class="section-header text-center">
+                    <h2>Explore Courses</h2>
+                    <p class="lead">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+                </div>
+            </div>
+            <!-- /row -->
+
+            <!-- courses -->
+            <div id="courses-wrapper">
+
+                <!-- row -->
+                <div class="row align-items-center justify-content-center">
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/35386.svg" height="100" width="100" ><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">Beginner to Pro in Excel: Financial Modeling and Valuation</a>
+                            <div class="course-details">
+                                <span class="course-category">Business</span>
+                                <span class="course-price course-free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/65293.svg" height="100" width="100"><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">Introduction to CSS </a>
+                            <div class="course-details">
+                                <span class="course-category">Web Design</span>
+                                <span class="course-price course-premium">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/63385.svg" height="100" width="100" class="img-fluid">
+                                <br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">The Ultimate Drawing Course | From Beginner To Advanced</a>
+                            <div class="course-details">
+                                <span class="course-category">Drawing</span>
+                                <span class="course-price course-premium">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/24881.svg" class="img-fluid" height="100" width="100"><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">The Complete Web Development Course</a>
+                            <div class="course-details">
+                                <span class="course-category">Web Development</span>
+                                <span class="course-price course-free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                </div>
+                <!-- /row -->
+
+                <!-- row -->
+                <div class="row">
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/88871.svg" height="100" width="100" class="img-fluid"><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">PHP Tips, Tricks, and Techniques</a>
+                            <div class="course-details">
+                                <span class="course-category">Web Development</span>
+                                <span class="course-price course-free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/88759.svg" alt="" class="img-fluid" height="100" width="100"><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">All You Need To Know About Web Design</a>
+                            <div class="course-details ">
+                                <span class="course-category">Web Design</span>
+                                <span class="course-price course-free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/73425.svg" class="img-fluid" width="100" height="100"><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">How to Get Started in Photography</a>
+                            <div class="course-details">
+                                <span class="course-category">Photography</span>
+                                <span class="course-price course-free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+
+                    <!-- single course -->
+                    <div class="col-md-3 col-sm-6 col-xs-6 mt-4">
+                        <div class="course text-center ">
+                            <a href="#" class="course-img text-decoration-none">
+                                <img src="images/90371.svg" height="100" width="100" class="img-fluid"><br>
+                                <i class="course-link-icon fa fa-link"></i>
+                            </a>
+                            <a class="course-title text-decoration-none" href="#">Typography From A to Z</a>
+                            <div class="course-details ">
+                                <span class="course-category">Typography</span>
+                                <span class="course-price course-free">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /single course -->
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /courses -->
+
+            <div class="row">
+                <div class="center-btn">
+                    <a class="main-button icon-button" href="#">More Courses</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- container -->
+
+    </div>
+
+
+    <!-----------------------Courses By Category--------------------------------------------------------->
+    <div class="row align-items-center justify-content-center py-4 " style="overflow: hidden;">
+
+        <div class="col-sm-11">
+          <h1 class="fw-bold fs-1" style="color: rgb(11, 11, 112);">
+            Courses By <span style="color: rgb(37, 90, 205);">Categories</span>
+        </h1>
+        <h4   class="pt-2" style="color: rgb(12, 12, 118);">Courses Designed For Continuous Learning To Excell In Any Field</h4>
+        <div class="row py-4">
+          <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+        <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+          <img src="images/59123.jpg" class="img-fluid"/>
+          <div class="course-category-meta d-flex align-items-start flex-column h-100">
+            <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+            <br>
+            <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+        </div>
+        </div>
+          </div>
+          <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+            <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+              <img src="images/36609.jpg" class="img-fluid"/>
+              <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Personality Development  &bull; Import Export &bull; HR Recruitment</h6>
+                <br>
+                <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+            </div>
+            </div>
+              </div>
+              <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                  <img src="images/75828.jpg" class="img-fluid"/>
+                  <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                    <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                    <br>
+                    <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                </div>
+                </div>
+                  </div>
+                  <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                    <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                      <img src="images/58534.jpg" class="img-fluid"/>
+                      <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                        <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                        <br>
+                        <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                    </div>
+                    </div>
+                      </div>
+                      <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                        <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                          <img src="images/58534 (1).jpg" class="img-fluid"/>
+                          <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                            <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                            <br>
+                            <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                        </div>
+                        </div>
+                          </div>
+                          <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                            <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                              <img src="images/65957.jpg" class="img-fluid"/>
+                              <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                <br>
+                                <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                            </div>
+                            </div>
+                              </div>
+                              <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                  <img src="images/15629.jpg" class="img-fluid"/>
+                                  <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                    <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                    <br>
+                                    <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                </div>
+                                </div>
+                                  </div>
+                                  <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                    <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                      <img src="images/76159.jpg" class="img-fluid"/>
+                                      <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                        <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                        <br>
+                                        <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                    </div>
+                                    </div>
+                                      </div>
+                                      <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                        <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                          <img src="images/78542.jpg" class="img-fluid"/>
+                                          <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                            <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                            <br>
+                                            <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                        </div>
+                                        </div>
+                                          </div>
+                                          <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                            <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                              <img src="images/35794.jpg" class="img-fluid"/>
+                                              <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                                <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                                <br>
+                                                <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                            </div>
+                                            </div>
+                                              </div> <div class="col-sm-4  gap-2 align-items-stretch p-2 ">
+                                                <div class="d-flex p-2 pb-3  align-items-start gap-3 mx-auto hoverable-effect">
+                                                  <img src="images/124578.jpg" class="img-fluid"/>
+                                                  <div class="course-category-meta d-flex align-items-start flex-column h-100">
+                                                    <h6 class="mb-2 fw-bold" style="color: rgb(20, 20, 100);">Stock Market &bull; Import Export &bull; HR Recruitment</h6>
+                                                    <br>
+                                                    <span class="px-2 mt-auto" style="border-radius: 10px; background-color: white;">8 Courses</span>
+                                                </div>
+                                                </div>
+                                                  </div>
+          
+        </div>
+        </div>
+        </div>
+
+
+
+        <!-------------------Latest Accounment-------------------------------------------------->
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 text-center ">
+                <img src="images/live.png" alt="">
+                <h1 style="color:rgb(15, 15, 90);">Webinars</h1> 
+                <h5 style="color:rgb(15, 15, 90);">BY INDUSTRY EXPERTS</h5>
+                <h5>PRE RECORDED</h5>
+
+            </div>
+
+        </div>
+
+        <!----------------Pricing section----------------------------------------------->
+
+
+
+
+        <!--====== PRICING STYLE ONE START ======-->
+<section class="pricing-area pricing-one border">
+    <div class="container">
+       <div class="row justify-content-center">
+          <div class="col-xxl-6 col-xl-7 col-lg-8">
+             <div class="section-title text-center">
+                <h2 class="mb-3 fw-bold">Our Pricing</h2>
+                <p class="text-lg">
+                   Morem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+                   quam suscipit distinctio optio, quaerat consequatur labore
+                   pariatur rerum.
+                </p>
+             </div>
+          </div>
+       </div>
+       <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="pricing-style-one">
+                <div class="pricing-header text-center">
+                   <h5 class="sub-title">Basic</h5>
+                   <span class="price">$199</span>
+                   <h5 class="year">Per year</h5>
+                </div>
+                <div class="pricing-list">
+                   <ul>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Carefully crafted
+                         components
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Amazing page
+                         examples
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Super friendly
+                         support team
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Awesome Support
+                      </li>
+                   </ul>
+                </div>
+                <div class="pricing-btn rounded-buttons text-center">
+                   <a
+                      class="btn primary-btn rounded-full"
+                      href="javascript:void(0)"
+                      >
+                   GET STARTED
+                   </a>
+                </div>
+                <div class="bottom-shape">
+                   <svg
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 112.35"
+                      >
+                      <defs>
+                         <style>
+                            .color-1 {
+                            fill: #2bdbdc;
+                            isolation: isolate;
+                            }
+                            .cls-1 {
+                            opacity: 0.1;
+                            }
+                            .cls-2 {
+                            opacity: 0.2;
+                            }
+                            .cls-3 {
+                            opacity: 0.4;
+                            }
+                            .cls-4 {
+                            opacity: 0.6;
+                            }
+                         </style>
+                      </defs>
+                      <title>bottom-part1</title>
+                      <g>
+                         <g data-name="Group 747">
+                            <path
+                               data-name="Path 294"
+                               class="cls-1 color-1"
+                               d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 297"
+                               class="cls-2 color-1"
+                               d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 296"
+                               class="cls-3 color-1"
+                               d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 295"
+                               class="cls-4 color-1"
+                               d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                               transform="translate(0 0)"
+                               />
+                         </g>
+                      </g>
+                   </svg>
+                </div>
+             </div>
+             <!-- single pricing -->
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="pricing-style-one">
+                <div class="pricing-header text-center">
+                   <h5 class="sub-title">Pro</h5>
+                   <span class="price">$399</span>
+                   <h5 class="year">Per year</h5>
+                </div>
+                <div class="pricing-list">
+                   <ul>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Carefully crafted
+                         components
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Amazing page
+                         examples
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Super friendly
+                         support team
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Awesome Support
+                      </li>
+                   </ul>
+                </div>
+                <div class="pricing-btn rounded-buttons text-center">
+                   <a
+                      class="btn primary-btn rounded-full"
+                      href="javascript:void(0)"
+                      >
+                   GET STARTED
+                   </a>
+                </div>
+                <div class="bottom-shape">
+                   <svg
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 112.35"
+                      >
+                      <defs>
+                         <style>
+                            .color-1 {
+                            fill: #2bdbdc;
+                            isolation: isolate;
+                            }
+                            .cls-1 {
+                            opacity: 0.1;
+                            }
+                            .cls-2 {
+                            opacity: 0.2;
+                            }
+                            .cls-3 {
+                            opacity: 0.4;
+                            }
+                            .cls-4 {
+                            opacity: 0.6;
+                            }
+                         </style>
+                      </defs>
+                      <title>bottom-part1</title>
+                      <g>
+                         <g data-name="Group 747">
+                            <path
+                               data-name="Path 294"
+                               class="cls-1 color-1"
+                               d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 297"
+                               class="cls-2 color-1"
+                               d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 296"
+                               class="cls-3 color-1"
+                               d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 295"
+                               class="cls-4 color-1"
+                               d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                               transform="translate(0 0)"
+                               />
+                         </g>
+                      </g>
+                   </svg>
+                </div>
+             </div>
+             <!-- single pricing -->
+          </div>
+          <div class="col-lg-4 col-md-7 col-sm-9">
+             <div class="pricing-style-one">
+                <div class="pricing-header text-center">
+                   <h5 class="sub-title">Enterprise</h5>
+                   <span class="price">$699</span>
+                   <h5 class="year">Per year</h5>
+                </div>
+                <div class="pricing-list">
+                   <ul>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Carefully crafted
+                         components
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Amazing page
+                         examples
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Super friendly
+                         support team
+                      </li>
+                      <li>
+                         <i class="lni lni-checkmark-circle"></i> Awesome Support
+                      </li>
+                   </ul>
+                </div>
+                <div class="pricing-btn rounded-buttons text-center">
+                   <a
+                      class="btn primary-btn rounded-full"
+                      href="javascript:void(0)"
+                      >
+                   GET STARTED
+                   </a>
+                </div>
+                <div class="bottom-shape">
+                   <svg
+                      data-name="Layer 1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 350 112.35"
+                      >
+                      <defs>
+                         <style>
+                            .color-1 {
+                            fill: #2bdbdc;
+                            isolation: isolate;
+                            }
+                            .cls-1 {
+                            opacity: 0.1;
+                            }
+                            .cls-2 {
+                            opacity: 0.2;
+                            }
+                            .cls-3 {
+                            opacity: 0.4;
+                            }
+                            .cls-4 {
+                            opacity: 0.6;
+                            }
+                         </style>
+                      </defs>
+                      <title>bottom-part1</title>
+                      <g>
+                         <g data-name="Group 747">
+                            <path
+                               data-name="Path 294"
+                               class="cls-1 color-1"
+                               d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 297"
+                               class="cls-2 color-1"
+                               d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 296"
+                               class="cls-3 color-1"
+                               d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                               transform="translate(0 0)"
+                               />
+                            <path
+                               data-name="Path 295"
+                               class="cls-4 color-1"
+                               d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                               transform="translate(0 0)"
+                               />
+                         </g>
+                      </g>
+                   </svg>
+                </div>
+             </div>
+             <!-- single pricing -->
+          </div>
+       </div>
+       <!-- row -->
+    </div>
+    <!-- container -->
+ </section>
+ <!--====== PRICING STYLE ONE ENDS ======-->
+
+
+
+
+ <!--------------------pegination-------------------------------------------------->
+ <div class="row align-items-center justify-content-center">
+  <div class="col-sm-2 pt-3 align-items-center justify-content-center">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="Login_page.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="StudentDashboard.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="Login_page.html">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+ </div>
+        
+
+
+    <!------------------------Footer---------------------------------------->
+    <div class="row  text-white" style="background-color: rgb(16, 16, 164); overflow-x: hidden;">
+    
+        <footer class="text-center text-lg-start  ">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset text-decoration-none">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset text-decoration-none">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset text-decoration-none">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset text-decoration-none">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset text-decoration-none">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset text-decoration-none">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              
+        
+              <div class="row mt-3">
+                
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Download our App
+                  </h6>
+                  <p>
+                    LearnVern is a training portal where anyone can learn any course in vernacular languages for free.
+                  </p>
+                </div>
+                
+        
+                
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">About</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Download the App</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Become SME</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Ambassader</a>
+                  </p>
+                </div>
+                
+        
+                
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Pricing</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Settings</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Orders</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset text-decoration-none">Help</a>
+                  </p>
+                </div>
+              
+        
+             
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+                  <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                  <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@example.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                  <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+               
+              </div>
+              
+            </div>
+          </section>
+          
+        
+          <!-- Copyright -->
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">KM  POOJA</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        
+            </div>
+            
+
+        
+        
+  </div>
+  
+   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
